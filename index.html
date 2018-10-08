@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en">
     <style type="text/css">
         .gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div {
             font-weight:400
@@ -49,6 +50,15 @@
             -ms-transform:translateY(-50%);
             transform:translateY(-50%)
         }
+        .crop {
+            width: 100%;
+            overflow: hidden;
+        }
+        .crop img {
+            width: 100%;
+            height: auto;
+            margin: 0 0 0 0;
+        }
     </style>
     <title>City of Giants</title>
 
@@ -80,48 +90,36 @@
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
         <i class="fa fa-remove"></i>
     </a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 3</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 4</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link 5</a>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button">Link 5</a>
 </nav>
 
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
-            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-                <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link</a>
-                <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link</a>
-                <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Link</a>
-            </div>
-        </div>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+        <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+        <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#team" class="w3-bar-item w3-button">Team</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#work" class="w3-bar-item w3-button">Work</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#pricing" class="w3-bar-item w3-button">Price</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#contact" class="w3-bar-item w3-button">Contact</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_website.htm#" class="w3-bar-item w3-button">Search</a>
+        <a href="#work" class="w3-bar-item w3-button">Work</a>
+        <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
 </div>
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-    <img src="./screenshots/mainshot.png" alt="boat" style="width:100%;">
+    <div class="crop"><img src="./screenshots/mainshot.png" alt="boat" style="width:100%;"></div>
     <div class="w3-container w3-display-bottommiddle w3-margin-bottom">
-        <h1 class="w3-xxxlarge" style="color: #eeeeee">CITY OF GIANTS</h1>
+        <h1 class="w3-xxxlarge" style="color: #eeeeee;width: 100%">CITY OF GIANTS</h1>
     </div>
 </div>
 
@@ -143,46 +141,12 @@
     </div>
 </div>
 
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-    <h2>OUR TEAM</h2>
-    <p>Meet the team - our office rats:</p>
-
-    <div class="w3-row"><br>
-
-        <div class="w3-quarter">
-            <img src="./index_files/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-            <h3>Johnny Walker</h3>
-            <p>Web Designer</p>
-        </div>
-
-        <div class="w3-quarter">
-            <img src="./index_files/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-            <h3>Rebecca Flex</h3>
-            <p>Support</p>
-        </div>
-
-        <div class="w3-quarter">
-            <img src="./index_files/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-            <h3>Jan Ringo</h3>
-            <p>Boss man</p>
-        </div>
-
-        <div class="w3-quarter">
-            <img src="./index_files/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-            <h3>Kai Ringo</h3>
-            <p>Fixer</p>
-        </div>
-
-    </div>
-</div>
-
-<!-- Work Row -->
+<!-- Screenshots Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
     <div class="w3-quarter">
-        <h2>Our Work</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Description</h2>
+        <p>City of Giants is a short game made in Unreal Engine 4. Play as an archaeology professor who travels to an ancient ruin to help investigate a discovery of groundbreaking significance. However, upon arriving, you find that all of the archaeologists have disappeared. Investigate the ruins to determine what happened, and shed light on the fall of an advanced civilization.</p>
     </div>
 
     <div class="w3-quarter">
@@ -190,11 +154,6 @@
             <img src="./index_files/snow.jpg" alt="Snow" style="width:100%">
             <div class="w3-container">
                 <h3>Customer 1</h3>
-                <h4>Trade</h4>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
             </div>
         </div>
     </div>
@@ -204,11 +163,6 @@
             <img src="./index_files/lights.jpg" alt="Lights" style="width:100%">
             <div class="w3-container">
                 <h3>Customer 2</h3>
-                <h4>Trade</h4>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
             </div>
         </div>
     </div>
@@ -218,11 +172,6 @@
             <img src="./index_files/mountains.jpg" alt="Mountains" style="width:100%">
             <div class="w3-container">
                 <h3>Customer 3</h3>
-                <h4>Trade</h4>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
             </div>
         </div>
     </div>
