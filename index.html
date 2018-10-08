@@ -63,10 +63,15 @@
 			width: 100%;
 		}
 		
-		.ourText{
+		.ourText , a{
 			color: #eeeeee;
 			font-family: "Old Style", serif;
 		}
+
+        .creditsText {
+            color: #000000;
+            font-family: "Old Style", serif;
+        }
 
         .crop {
             width: 100%;
@@ -107,17 +112,17 @@
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-        <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-        <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"></i>Home</a>
+        <a href="#screenshots" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Screenshots</a>
+        <a href="#trailer" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Trailer</a>
+        <a href="#credits" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Credits</a>
     </div>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-        <a href="#work" class="w3-bar-item w3-button">Work</a>
-        <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#screenshots" class="w3-bar-item w3-button">Screenshots</a>
+        <a href="#trailer" class="w3-bar-item w3-button">Trailer</a>
+        <a href="#credits" class="w3-bar-item w3-button">Credits</a>
     </div>
 </div>
 
@@ -136,7 +141,7 @@
 </div>
 
 <!-- Screenshots Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="screenshots">
     <div style="width:50%;margin-left: auto;margin-right: auto; margin-bottom: 2em;">
         <h2 style="text-align: center; font-size:3em" class="ourText">Description</h2>
         <p style="font-size:1.3em" class="ourText">You, a professor, travel to an ancient ruin to help investigate a discovery of groundbreaking significance. However, when you arrive, none of the archaeologists are to be found--including your sister. Explore the ruins of an advanced civilization to discover their fate, and perhaps shed light on the fall of the City of Giants.</p>
@@ -176,23 +181,23 @@
 </div>
 
 <!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+<div class="w3-container w3-padding-64 w3-theme-l5" id="credits">
     <div class="w3-row" style="margin-left: auto; margin-right: auto; width:50%;">
-        <div class="w3-col m5">
+        <div class="w3-col m5 creditsText">
             <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Credits</span></div>
-            <h3>Level Designers</h3>
+            <h3 class="creditsText">Level Designers</h3>
             <ul>
                 <li><p>&nbsp;&nbsp;Hannah Jauris</p></li>
                 <li><p>&nbsp;&nbsp;Vincent Miller</p></li>
             </ul>
-            <h3>Made in Unreal Engine 4</h3>
+            <h3 class="creditsText">Made in Unreal Engine <span style="font-family: serif">4</span></h3>
         </div>
     </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w<span style="font-family: serif">3</span>.css</a></p>
     </div>
 </footer>
 
